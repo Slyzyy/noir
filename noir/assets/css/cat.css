@@ -1,0 +1,230 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Product Sans, Helvetica;
+}
+
+nav {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: 0.3s;
+	border-bottom: 2px black solid;
+}
+
+nav.black {
+	background: rgba(0, 0, 0, 1);
+	height: 100px;
+	padding: 10px 100px;
+}
+
+nav .logo {
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+	transition: 0.3s;
+}
+
+nav.black .logo {
+	color: white;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+nav.black ul li a {
+	color: white;
+}
+
+nav ul li a:focus {
+	outline: none;
+}
+
+nav ul li a.active {
+	background: #6d6d6d;
+	color: white;
+	border-radius: 6px;
+}
+
+section.sec1 {
+	width: 100%;
+	height: 30vh;
+}
+
+section.sec1 h2 {
+	width: 90%;
+	padding-top: 140px;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 45px;
+}
+
+.wrapper-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-auto-rows: minmax(100px, auto);
+	grid-gap: 2em;
+	margin-top: 10px;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.wrapper-grid a {
+	display: block;
+}
+
+.box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.box1 {
+	background-image: url(img/clothing/thumbnail-clothing/camo-sweater.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 1/3;
+	grid-row: 1/8;
+	transition: all 0.2s ease-in-out;
+}
+
+.box1:hover {
+	transform: scale(1.05);
+	opacity: 0.8;
+}
+
+.box2 {
+	background-image: url(img/clothing/thumbnail-clothing/phanter-sweater.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 3/4;
+	grid-row: 1/5;
+	transition: all 0.2s ease-in-out;
+}
+
+.box2:hover {
+	transform: scale(1.05);
+}
+
+.box3 {
+	background-image: url(img/clothing/thumbnail-clothing/snake-hoodie.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 3/4;
+	grid-row: 4/8;
+	margin-top: 15px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box3:hover {
+	transform: scale(1.05);
+}
+
+.box4 {
+	background: url(img/clothing/thumbnail-clothing/stripe-hoodie.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 1/2;
+	grid-row: 7/11;
+	margin-top: 30px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box4:hover {
+	transform: scale(1.05);
+}
+
+.box5 {
+	background: url(img/clothing/thumbnail-clothing/signature-hoodie.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 2/4;
+	grid-row: 7/15;
+	margin-top: 30px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box5:hover {
+	transform: scale(1.05);
+}
+
+.box6 {
+	background: url(img/clothing/thumbnail-clothing/bold-hoodie.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 1/2;
+	grid-row: 10/14;
+	margin-top: 45px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box6:hover {
+	transform: scale(1.05);
+}
+
+.box7 {
+	background-image: url(img/clothing/thumbnail-clothing/essential-hoodie.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 1/3;
+	grid-row: 13/20;
+	margin-top: 60px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box7:hover {
+	transform: scale(1.05);
+}
+
+.box8 {
+	background-image: url(img/clothing/thumbnail-clothing/square-tee.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 3/4;
+	grid-row: 13/18;
+	margin-top: 60px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box8:hover {
+	transform: scale(1.05);
+}
+
+.box9 {
+	background-image: url(img/clothing/thumbnail-clothing/sleeve-tee.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	grid-column: 3/4;
+	grid-row: 16/21;
+	margin-top: 75px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box9:hover {
+	transform: scale(1.05);
+}

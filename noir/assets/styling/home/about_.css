@@ -1,0 +1,146 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Product Sans, Helvetica, Arial;
+}
+
+header {
+	height: 64px;
+	background-color: black;
+}
+
+.logo {
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.profile {
+	position: fixed;
+	float: right;
+	color: white;
+	font-size: 20px;
+	left: 92%;
+	top: 2%;
+}
+
+.profile a {
+	text-decoration: none;
+	color: white;
+}
+
+nav {
+	z-index: 3;
+	position: fixed;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+nav.black ul {
+	background: #000;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+.menu-icon {
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+/* End Of Header CSS */
+
+.sec1 {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.sec1 h2 {
+	color: black;
+	font-size: 45px;
+	text-align: center;
+	margin: 0px 700px;
+	margin-top: 50px;
+	border-bottom: 5px black solid;
+}
+
+.sec1 p {
+	text-align: justify;
+	color: black;
+	padding: 0px;
+	margin: 0px 400px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+@media (max-width: 580px) {
+	.logo {
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+
+	nav ul {
+		max-height: 0px;
+		background: #000;
+	}
+
+	nav.black ul {
+		background: #000;
+	}
+
+	.showing {
+		max-height: 20em;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 18px 0;
+		text-align: center;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+}

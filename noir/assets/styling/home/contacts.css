@@ -1,0 +1,154 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	align-items: center;
+	font-family: Product Sans, Helvetica, Arial;
+}
+
+header {
+	height: 64px;
+	background-color: black;
+}
+
+.logo {
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.profile {
+	position: fixed;
+	float: right;
+	color: white;
+	font-size: 20px;
+	left: 92%;
+	top: 2%;
+}
+
+.profile a {
+	text-decoration: none;
+	color: white;
+}
+
+nav {
+	z-index: 3;
+	position: fixed;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+nav.black ul {
+	background: #000;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+label {
+	font-size: 25px;
+	margin-left: 5px;
+}
+
+input {
+	border: 0;
+	outline: 0;
+	width: 100%;
+	background-color: #d3d3d3;
+	font-size: 15px;
+	padding: 20px;
+}
+
+.menu-icon {
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+.form {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	font-size: 20px;
+}
+
+.form-section h2 {
+	font-size: 45px;
+	margin-bottom: 50px;
+}
+
+.form-section {
+	margin-top: 100px;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.input {
+	align-items: center;
+	width: 100%;
+}
+
+.grid-form {
+	margin: 0px 500px;
+	display: grid;
+	grid-gap: 70px;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 30px;
+}
+
+.message {
+	height: 100%;
+	margin-top: 70px;
+	margin: 0px 500px;
+	margin-bottom: 30px;
+}
+
+.message-input {
+	padding-bottom: 100px;
+}
+
+button {
+	margin-top: 70px;
+	width: 50%;
+	border: 0;
+	background-color: black;
+	margin: 0px 500px;
+	padding: 20px;
+	color: white;
+	cursor: pointer;
+}
